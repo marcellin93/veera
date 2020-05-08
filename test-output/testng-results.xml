@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="75817" started-at="2020-05-08T07:13:34Z" finished-at="2020-05-08T07:14:49Z">
+  <suite name="Suite" duration-ms="1297" started-at="2020-05-08T14:18:39Z" finished-at="2020-05-08T14:18:40Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.testrunner@61832929]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="75817" started-at="2020-05-08T07:13:34Z" finished-at="2020-05-08T07:14:49Z">
+    <test name="Test" duration-ms="1297" started-at="2020-05-08T14:18:39Z" finished-at="2020-05-08T14:18:40Z">
       <class name="com.runner.testrunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.testrunner@61832929]" name="setUpClass" is-config="true" duration-ms="752" started-at="2020-05-08T07:13:34Z" finished-at="2020-05-08T07:13:34Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.testrunner@61832929]" name="setUpClass" is-config="true" duration-ms="391" started-at="2020-05-08T14:18:39Z" finished-at="2020-05-08T14:18:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.testrunner@61832929]" name="runScenario" duration-ms="39780" started-at="2020-05-08T07:13:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-08T07:14:14Z">
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.testrunner@61832929]" name="runScenario" duration-ms="530" started-at="2020-05-08T14:18:39Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-08T14:18:40Z">
           <params>
             <param index="0">
               <value>
@@ -27,10 +27,29 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: C:\Users\Marcellin\eclipse-workspace\com.facebook\driver1\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Marcellin\eclipse-workspace\com.facebook\driver1\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.stepdef.stepdef.user_is_on_facebook_page(stepdef.java:17)
+at ✽.user is on facebook page(src/test/resources/features/fblogin.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.testrunner@61832929]" name="runScenario" duration-ms="34890" started-at="2020-05-08T07:14:14Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-08T07:14:49Z">
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.testrunner@61832929]" name="runScenario" duration-ms="31" started-at="2020-05-08T14:18:40Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-08T14:18:40Z">
           <params>
             <param index="0">
               <value>
@@ -43,10 +62,29 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: C:\Users\Marcellin\eclipse-workspace\com.facebook\driver1\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Marcellin\eclipse-workspace\com.facebook\driver1\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.stepdef.stepdef.user_is_on_facebook_page(stepdef.java:17)
+at ✽.user is on facebook page(src/test/resources/features/fblogin.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.runner.testrunner@61832929]" name="tearDownClass" is-config="true" duration-ms="101" started-at="2020-05-08T07:14:49Z" finished-at="2020-05-08T07:14:49Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.runner.testrunner@61832929]" name="tearDownClass" is-config="true" duration-ms="154" started-at="2020-05-08T14:18:40Z" finished-at="2020-05-08T14:18:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
